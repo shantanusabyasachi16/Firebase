@@ -4,6 +4,7 @@ import { getDatabase, ref, set } from "firebase/database";
 import { app } from "./firebase";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";// authetication
 import Signup from "./Pages/Signup";
+import SignIn from "./Pages/SignIn";
 
 //get an instance for authentication
 
@@ -47,6 +48,7 @@ function App() {
 <button onClick={signUp}>create user email</button>
     */}  
 <Signup/>
+<SignIn/>
     
     </>
   );
